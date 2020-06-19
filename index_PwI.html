@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Jade's Page! </title>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+    
+    </head>
+    
+<body> 
+    
+    <div class = "header">  
+        <h1> ~ Interactive Internet Art ~ </h1>
+        <h5> Project completed in Summer 2020 </h5>
+    </div>
+       
+    <div class = "navbar"> 
+        <a href="index.html"> ~Home~ </a>
+        <a href="index_CG.html"> ~Circle Generator~ </a>
+        <a href="index_PwI.html" class = "active"> ~Painting with Images~ </a>
+        <a href="index_BO.html"> ~Bouncing Objects~ </a>
+        <a href="#" class = "right" > ~Social Media~ </a> 
+    </div>
+       
+    <div class = "row"> 
+        <div class = "side clearfix">
+            <h2> Project Two: Painting with Images </h2>
+            <p> In this one, originally we were painting with flowers but instead I decided to make the images just straight colors so you can basically paint just like its a software(well, with not as great quality, admittedely). </p>
+            <hr>
+            <p> This is the second project we worked on. </p>
+            <br>
+        
+        </div>
+        
+        <div class = "main clearfix">
+            <h2> PAINTING WITH IMAGES </h2>
+            <div id = myContainer> </div>
+            <button type = "button" value = "0" onclick = "changeImage(this.value)" class = "button">  <img src="img/color0.png" width = 50> </button>
+            <button type = "button" value = "1" onclick = "changeImage(this.value)" class = "button">  <img src="img/color1.png" width = 50> </button>
+            <button type = "button" value = "2" onclick = "changeImage(this.value)" class = "button">  <img src = "img/color2.png" width = 50> </button>
+             <button type = "button" value = "3" onclick = "changeImage(this.value)" class = "button">  <img src = "img/color3.png" width = 50> </button>
+             <button type = "button" value = "4" onclick = "changeImage(this.value)" class = "button">  <img src = "img/color4.png" width = 50> </button>
+             <button type = "button" value = "5" onclick = "changeImage(this.value)" class = "button">  <img src = "img/color5.png" width = 50> </button>
+             <button type = "button" value = "6" onclick = "changeImage(this.value)" class = "button">  <img src = "img/color6.png" width = 50> </button>
+             <button type = "button" value = "7" onclick = "changeImage(this.value)" class = "button">  <img src = "img/color7.png" width = 50> </button>
+             <button type = "button" value = "8" onclick = "changeImage(this.value)" class = "button">  <img src = "img/color8.png" width = 50> </button>
+             <button type = "button" value = "9" onclick = "changeImage(this.value)" class = "button">  <img src = "img/color9.png" width = 50> </button>
+             <button type = "button" value = "10" onclick = "changeImage(this.value)" class = "button">  <img src = "img/color10.png" width = 50> </button>
+            <button type = "button" value = "-10" onclick = "changeSize(this.value)" class = "button"> - </button>  <span id="sizeDimension"></span>
+            <button type = "button" value = "10" onclick = "changeSize(this.value)" class = "button"> + </button>
+            <button type = "button" onclick = background(50) class = "button"> Clear </button>
+<!--
+             <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+            <p> transparency</p>
+-->
+        </div>
+    </div>
+    
+    <div class = "footer">
+        <h5> Copyright &copy; 2020 Jade Gladue </h5>
+    </div>
+    
+     <script src = "p5.min.js" > </script>
+    <script src = "js/app_PwI.js" > </script>
+    
+    </body>
+    
+</html>
